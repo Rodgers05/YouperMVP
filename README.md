@@ -1,52 +1,57 @@
-# Youper
+# YOUPER — University Student Mental Health Support Platform
 
-A collaborative project repository for planning and building the Youper product.
+A mobile-first web app giving university students mood tracking, mental health education, anonymous peer support, and a fast path to professional or emergency help.
 
-## Collaboration setup
+## Docs
 
-This repository is ready for GitHub-based teamwork with the basics already in place:
+| File | What's in it |
+|---|---|
+| [`PROBLEM_STATEMENT.md`](./PROBLEM_STATEMENT.md) | The problem this solves and who it's for |
+| [`SRS.md`](./SRS.md) | Requirements — MVP vs. stretch goals |
+| [`SYSTEM_DESIGN.md`](./SYSTEM_DESIGN.md) | Architecture, database schema, key workflows |
+| [`CONTRIBUTORS.md`](./CONTRIBUTORS.md) | Who's building what |
 
-- default branch workflow using pull requests
-- CODEOWNERS to auto-request reviews
-- issue and PR templates for consistent collaboration
-- CI workflow placeholder for future checks
-- architecture and delivery notes for the project plan
+## Stack
 
-## Quick start
+Next.js (installable as a PWA) + Supabase (Postgres, Auth) + IndexedDB for offline mood-entry caching. See `SYSTEM_DESIGN.md` for details — swap this out if your team prefers a different stack.
 
-1. Clone the repo:
+## Getting Started
 
-   git clone git@github.com:TIMOTHY-glitch-hash/youper.git
-   cd youper
+1. Clone the repo
+   ```bash
+   git clone <repo-url>
+   cd <repo-name>
+   ```
 
-2. Create a feature branch:
+2. Install dependencies
+   ```bash
+   npm install
+   ```
 
-   git checkout -b feature/short-description
+3. Set up environment variables
+   ```bash
+   cp .env.example .env.local
+   ```
+   Fill in your Supabase project URL and anon key.
 
-3. Make changes, validate them, and commit:
+4. Run the dev server
+   ```bash
+   npm run dev
+   ```
+   App runs at `http://localhost:3000`
 
-   git add .
-   git commit -m "feat: add ..."
-   git push -u origin feature/short-description
+## Core Demo Flow
 
-4. Open a pull request and request reviews from CODEOWNERS.
+1. Student signs up, logs a mood entry
+2. Student views their mood trend over time
+3. Student browses the educational library
+4. Student posts anonymously in the community forum
+5. Student taps "Get Help Now" for emergency contacts, or the counselor link to schedule
 
-## Repository structure
+## Important Note
 
-- .github/: GitHub issue templates, PR template, workflows, and automation config
-- docs/: architecture and implementation plan
-- README.md: project overview and local workflow
-- LICENSE: MIT license
-- CONTRIBUTING.md: contribution guidelines
+This app supplements — it does not replace — professional mental health services. Emergency contact info shown in the app must come from real, current campus/regional crisis resources.
 
-## Project blueprint
+## Status
 
-See [docs/architecture.md](docs/architecture.md) for the proposed stack, architecture, role split, and phased delivery plan.
-
-## Maintainers
-
-- @TIMOTHY-glitch-hash
-
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for the contribution workflow.
+MVP in progress — see `SRS.md` for what's built vs. stretch/future work.
