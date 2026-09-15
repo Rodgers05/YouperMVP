@@ -10,6 +10,7 @@ A mobile-first web app giving university students mood tracking, mental health e
 | [`SRS.md`](./SRS.md) | Requirements — MVP vs. stretch goals |
 | [`SYSTEM_DESIGN.md`](./SYSTEM_DESIGN.md) | Architecture, database schema, key workflows |
 | [`CONTRIBUTORS.md`](./CONTRIBUTORS.md) | Who's building what |
+| [`GIT_GUIDE.md`](./GIT_GUIDE.md) | How to use Git and GitHub for this project |
 
 ## Stack
 
