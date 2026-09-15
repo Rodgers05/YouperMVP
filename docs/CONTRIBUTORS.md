@@ -1,6 +1,6 @@
 # Contributors
 
-Placeholder roles below — swap in names. Task references (FR#) point back to `SRS.md`.
+ Task references (FR#) point back to `SRS.md`.
 
 > **Flag:** with Supabase as the backend, "Backend" and "Database" overlap heavily in practice (schema design, RLS policies, and server-side queries are the same work). these two  are closely paired rather than treating them as fully separate lanes.
 
