@@ -13,7 +13,7 @@
 - "Get Help Now" emergency contact page/modal UI (FR7)
 - Counselor scheduling link/contact page UI (FR8)
 
-## Baker , Joel , Marvin  — Backend
+## Baker ,Marvin  — Backend
 - Server Actions / API logic for mood entry creation and retrieval (FR2, FR3)
 - Server Actions for forum post/reply creation (FR5, FR6)
 - Sign-up/login flow logic (FR1)
