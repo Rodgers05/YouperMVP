@@ -5,7 +5,7 @@ This document outlines the core features of the application and their responsibi
 
 ---
 
-## FR1: Sign-up/Login Flow Logic
+## FR1: Sign-up/Login Flow Logic - ISIKO 
 
 **Description**: Handles user authentication including account creation and login functionality.
 
