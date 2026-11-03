@@ -1,29 +1,37 @@
 {
-  "name": "backend",
+  "name": "isiko-sign-up-login-flow",
   "version": "1.0.0",
-  "description": "Backend projects files",
-  "main": "index.js",
-  "directories": {
-    "lib": "lib"
-  },
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "keywords": [],
+  "description": "User registration, login, and logout using TypeScript and Supabase Auth.",
+  "main": "auth.ts",
+ "scripts": {
+    "test": "npm run typecheck",
+    "typecheck": "tsc --noEmit",
+    "test:connection": "tsx testConnection.ts",
+    "test:signup": "tsx testSignUp.ts",
+    "test:login": "tsx testLogin.ts",
+    "test:logout": "tsx testLogout.ts",
+    "test:auth": "tsx testAuthModule.ts",
+    "test:session": "tsx testSession.ts",
+    "test:recovery-verification": "tsx testPasswordRecoveryVerification.ts"
+},
+  "keywords": [
+    "isiko",
+    "typescript",
+    "supabase",
+    "authentication",
+    "signup",
+    "login"
+  ],
   "author": "",
   "license": "ISC",
   "type": "module",
   "dependencies": {
     "@supabase/supabase-js": "^2.117.2",
-    "next": "^16.3.8",
-    "react": "^19.3.0",
-    "react-dom": "^19.3.0"
+    "dotenv": "*"
   },
   "devDependencies": {
     "@types/node": "^26.6.4",
-    "@types/react": "^19.3.0",
-    "typescript": "^7.0.2"
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
   }
 }
